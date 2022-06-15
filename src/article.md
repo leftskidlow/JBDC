@@ -26,7 +26,7 @@ When working inside the JDBC environment there are five primary layers in the ar
 - ### Databases
     - These are the data storage objects used to persist data throughout your application. There are many different vendors providing data storage solutions and each have their own set of advantages and disadvantages. As a developer it may be your job to compare databases and decide which one works best for your application.
 
-![JDBC Overview](/Users/timmiller/Desktop/Work/Artwork/JBDC/Article - JDBC Overview.png "JDBC Overview")
+![JDBC Overview](https://github.com/leftskidlow/images/blob/main/Article%20-%20JDBC%20Overview.png?raw=true)
 
 ## Establishing the JDBC Connection
 

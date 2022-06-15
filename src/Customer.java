@@ -4,5 +4,4 @@ public class Customer {
   private String lastName;
   private String email;
   private String cellNumber;
-  private String address;
 }
