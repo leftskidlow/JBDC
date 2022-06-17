@@ -34,7 +34,7 @@ public class CustomerDaoService {
   /*
   Method to save a list of customers to the CUSTOMER table
    */
-  public static void saveCustomers() { }
+  public static void saveCustomers(List<Customer> customers) { }
 
   /*
   Method to load all customers from the CUSTOMER table
@@ -47,7 +47,7 @@ public class CustomerDaoService {
   public static Customer loadCustomerByID() { return new Customer(999, "No", "Name", "no@email.com", "n/a"); }
 
   /*
-  Method to create the Customer Table in the database
+  Method to update a single customer in the database, by ID.
    */
   public static Customer updateCustomerByID() { return new Customer(999, "No", "Name", "no@email.com", "n/a"); }
 }

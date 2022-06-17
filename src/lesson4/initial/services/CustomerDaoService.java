@@ -1,11 +1,14 @@
-package lesson3.inital.services;
+package lesson4.initial.services;
 
-import lesson3.inital.models.Customer;
+import lesson4.initial.models.Customer;
+
+// Add import statements here:
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerDaoService {
+  // Add database url here:
 
   /*
   Method to test the drivers are found in the classpath
@@ -24,7 +27,9 @@ public class CustomerDaoService {
   /*
   Method to test the connection to the database
    */
-  public static void testDatabaseConnection() { }
+  public static void testDatabaseConnection() {
+
+  }
 
   /*
   Method to create the CUSTOMER table in the database
@@ -51,3 +56,4 @@ public class CustomerDaoService {
    */
   public static Customer updateCustomerByID() { return new Customer(999, "No", "Name", "no@email.com", "n/a"); }
 }
+
