@@ -14,4 +14,16 @@ public class Customer {
     this.email = email;
     this.cellNumber = cellNumber;
   }
+
+  @Override
+  public String toString() {
+    return "Customer {" +
+      "ID = " + ID +
+      ", firstName = '" + firstName + '\'' +
+      ", lastName = '" + lastName + '\'' +
+      ", email = '" + email + '\'' +
+      ", cellNumber = '" + cellNumber + '\'' +
+      '}';
+  }
 }
+

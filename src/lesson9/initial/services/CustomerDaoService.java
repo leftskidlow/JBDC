@@ -1,12 +1,8 @@
-package lesson8.initial.services;
+package lesson9.initial.services;
 
-import lesson8.initial.models.Customer;
-// Add import statement here:
+import lesson9.initial.models.Customer;
 
-import java.sql.Statement;
-import java.sql.DriverManager;
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -118,20 +114,21 @@ public class CustomerDaoService {
     try (
       Connection connection = DriverManager.getConnection(url);
       Statement statement = connection.createStatement();
-      // Create the ResultSet here:
-
+      ResultSet results = statement.executeQuery("SELECT * FROM CUSTOMERS;")
     ) {
-      // Add logic to print the ResultSet here:
+      while (results.next()) {
+        // Save customer variables here:
+        int ID = results.getInt(1);
 
 
 
 
+        // Add a new customer to allCustomers here:
 
-
-
-
+      }
+      Thread.sleep(1000);
       System.out.println("All customers were loaded from the database.");
-    } catch (SQLException e) {
+    } catch (SQLException | InterruptedException e) {
       System.out.println("There was an error with your request.");
       System.out.println(e);
     }

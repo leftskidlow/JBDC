@@ -40,5 +40,5 @@ We don't want to hardcode values into our SQL expression though, we want  our `C
 4. Compile and run your program:
     1. Navigate to the `projects` folder in the terminal (use 'cd' to change directories).
     2. Use the command `javac $(find . -name '*.java'` to compile all `.java` files in all subdirectories of the `project` folder.
-    3. Run your program with the classpath variables like before: 
+    3. Run your program with the classpath variables like before: `java -classpath .:../sqlite-jdbc-3.36.0.3.jar viewmodels.BusinessLogic`.
     4. HINT: You will notice we have added a helper method to the `CustomerDaoService` class, `.resetDatabase()`. This helper method deletes the `CUSTOMER` table so that you can start with a fresh table each time, helping eliminate some errors as we run these setup methods over and over again.

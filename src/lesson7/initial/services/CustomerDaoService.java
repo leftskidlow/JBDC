@@ -88,13 +88,13 @@ public class CustomerDaoService {
     ) {
       for (Customer customer : customers) {
         // Add Customer properties here:
-        String insertIntoCustomer = "INSERT INTO CUSTOMERS VALUES ("
-          + "CAST('" + HERE + "' AS INTEGER),\""
-          + HERE + "\",\""
-          + HERE + "\",\""
-          + HERE + "\",\""
-          + HERE
-          + "\");";
+//        String insertIntoCustomer = "INSERT INTO CUSTOMERS VALUES ("
+//          + "CAST('" + HERE + "' AS INTEGER),\""
+//          + HERE + "\",\""
+//          + HERE + "\",\""
+//          + HERE + "\",\""
+//          + HERE
+//          + "\");";
         // Add .executeUpdate method call here:
 
       }

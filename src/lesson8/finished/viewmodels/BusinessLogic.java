@@ -1,7 +1,7 @@
-package lesson8.initial.viewmodels;
+package lesson8.finished.viewmodels;
 
-import lesson8.initial.services.CustomerDaoService;
-import lesson8.initial.models.Customer;
+import lesson8.finished.services.CustomerDaoService;
+import lesson8.finished.models.Customer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 public class BusinessLogic {
   static List<Customer> customerList = new ArrayList<>();
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
 
     BusinessLogic mysteryBusiness = new BusinessLogic();
     // Do a bunch of business things for your business
@@ -24,7 +24,7 @@ public class BusinessLogic {
     CustomerDaoService.saveCustomers(customerList);
 
     // Add a call to .loadAllCustomers() here:
-
+    CustomerDaoService.loadAllCustomers();
   }
 
   public void addCustomer(Customer customer) {
