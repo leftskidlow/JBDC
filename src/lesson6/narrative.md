@@ -1,6 +1,6 @@
 # Creating a table / Executing a statement
 
-Up to this point we have still been operating strictly in Java within our application. Now that we have firmly established a connection with our database and successfully created a statement manager, it is time to begin blending SQL into our program.
+Up to this point we have still been operating strictly in the Java language within our application. Now that we have firmly established a connection with our database and successfully created a statement manager, it is time to begin blending SQL into our program.
 
 As a reminder, SQL is the language of relational databases. The term "relation" is just a fancy word for a table and how the data across multiple tables can be related to each other. All data in a relational database is stored inside these tables, broken down into columns and rows.
 

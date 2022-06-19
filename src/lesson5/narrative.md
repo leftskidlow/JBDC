@@ -13,7 +13,7 @@ Once a `Statement` object is created it can be used to execute SQL queries and r
 
 These `Statement` objects, just like `Connection` objects, also need to be closed when you are finished using them and are best included inside the same `try-with-resources` block that a `Connection` is opened in.
 
-There is also an extension of `Statement` called `PreparedStatement` that is used to execute a precompiled SQL statement multiple times and with greater efficiency. As your program interacts more and more with the database you may find that a `PreparedStatement` improves your performance.
+There is also an extension of `Statement` called `PreparedStatement` that is used to execute a precompiled SQL statement multiple times and with greater efficiency. As your program interacts more and more with the database you may find that a `PreparedStatement` might improve your performance.
 
 For now, let's set up our `Statement` objects that we will use in each of our remaining `CustomerDaoService` methods.
 
