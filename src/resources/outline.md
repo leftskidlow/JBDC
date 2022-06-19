@@ -7,6 +7,4 @@
 7. Storing a List<Customer> to the database
 8. Retrieving / Viewing the ResultSet
 9. Creating Customers from the ResultSet
-10. Find a Customer in the Table
-11. Update a Customer in the Table
-12. Review
+10. Review

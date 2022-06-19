@@ -30,7 +30,7 @@ We don't want to hardcode values into our SQL expression though, we want  our `C
           + customer.cellNumber
           + "\");";
    ```
-2. Outside of the `for-each` loop, call the `executeUpdate()` on the `Statement` instance, pass in the `insertIntoCustomer` to the method.
+2. Outside the `for-each` loop, call the `executeUpdate()` on the `Statement` instance, pass in the `insertIntoCustomer` to the method.
    1. HINT:
    ```java
    Statement someStatement = someConnection.createStatement();

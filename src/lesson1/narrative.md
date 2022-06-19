@@ -19,3 +19,6 @@ All in all, between your application and the database, five layers exist in the 
     - This is the specific code that translates the commands sent via the JDBC into the language and syntax that the designated database works with. Most database applications, MySQL, SQLite, and Postgres for example, each provide JDBC drivers that can be downloaded from their websites.
 5. Databases
     - These are the data storage objects used to persist data throughout your application.
+    
+
+1. Continue to begin implementing the JDBC API!

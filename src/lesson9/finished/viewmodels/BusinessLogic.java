@@ -22,10 +22,14 @@ public class BusinessLogic {
     CustomerDaoService.createTable();
     CustomerDaoService.saveCustomers(customerList);
 
+    System.out.println("Clearing out the 'customerList' variable now that all entries have been saved to the database.");
+    Thread.sleep(1500);
     customerList.clear();
-    System.out.println("There are currently " + customerList.size() + " elements in the customerList.");
+    System.out.println("There are currently " + customerList.size() + " elements in the 'customerList'.");
 
+    System.out.println("Loading all customers from the database back into the 'customerList'.");
     customerList = CustomerDaoService.loadAllCustomers();
+    Thread.sleep(1500);
     customerList.forEach(System.out::println);
   }
 
